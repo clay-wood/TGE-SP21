@@ -1,0 +1,113 @@
+\documentclass[10pt]{article}
+
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amsthm,amssymb}
+\usepackage{graphicx}
+\usepackage{subfig}
+\usepackage{float}
+\usepackage{wrapfig}
+\usepackage{multicol}
+ \usepackage{booktabs}
+ \usepackage{hyperref}
+ \hypersetup{
+ 	colorlinks=true,
+ 	linkcolor=blue,
+ 	filecolor=magenta,      
+ 	urlcolor=cyan,
+ }
+
+\graphicspath{ {/Users/clay/Documents/research/TGE-SP21/assignments/images/} }
+
+\begin{document}
+
+% --------------------------------------------------------------
+%                         Start here
+% --------------------------------------------------------------
+
+\title{Assignment 3}%replace X with the appropriate number
+\author{Geosc 597-003\\
+Techniques of Geophysical Experimentation} %if necessary, replace with your course title
+
+\maketitle
+
+
+\noindent{\large \textbf{Let’s do a bit more w/ the Arduino.}}
+
+
+\section*{Activity 1 - Voltmeter}
+
+\noindent\textbf{\textit{Do the following:}}
+\begin{enumerate}
+		\item Build an Arduino Voltmeter using the LCD screen -- as Clay demonstrated in class \#3.
+		\item Set up the wiring for a blinking LED and use your 10k potentiometer (SIK) to control the blinking rate. 
+		\begin{enumerate}
+			\item Measure the voltage with your Arduino Voltmeter and convert the output that you measure from the pot. (sensorValue) to voltage.
+			\item Write the voltage to the serial monitor at the same rate that your LED is blinking.
+			\item What happens when you vary the position of the pot?
+		\end{enumerate} 
+		\item Produce a fully commented code and write a brief summary of what you’ve done.
+\end{enumerate}
+
+\begin{table}[h!]
+	\footnotesize
+	\centering
+	\begin{tabular}{@{}ll@{}}
+		\multicolumn{2}{c}{\textbf{Grading Rubric}} \\ \midrule 
+		\multicolumn{1}{l}{\textit{Problem}}   & \textit{Points}   \\ \midrule 
+		\#1                    & 25       \\ \midrule
+		\#2            & 15       \\ \midrule
+		\#3            & 10       \\ \midrule
+		Total                            & 50       \\ \bottomrule
+	\end{tabular}
+\end{table}
+
+ \clearpage
+ 
+ 
+ 
+\section*{Activity 2 - Temperature and Humidity Sensor}
+
+Build a temperature and relative humidity sensor using the DHT11 chip supplied with your kit.  Study the technical docs (link below) and try to do your wiring and write your code from scratch, without using any on-line resources.  In the end, if you need help, go ahead and look online and/or see one of us if you need help. \url{https://github.com/clay-wood/TGE-SP21/tree/main/resources/Elegoo_starter_kit/Datasheet}\\
+
+\noindent Document your setup with a wiring diagram or photos (captioned), and concise description as necessary. It should be easy for others to replicate what you've done. 
+
+
+\begin{table}[h!]
+	\footnotesize
+	\centering
+	\begin{tabular}{@{}ll@{}}
+		\multicolumn{2}{c}{\textbf{Grading Rubric}} \\ \midrule 
+		\multicolumn{1}{l}{\textit{Topic}}   & \textit{Points}   \\ \midrule 
+		Functioning Sensor                   & 10       \\ \midrule
+		Original Code            & 5       \\ \midrule
+		Documentation            & 10       \\ \midrule
+		Total                            & 25       \\ \bottomrule
+	\end{tabular}
+\end{table}
+
+
+\section*{What to upload to Canvas}
+You should upload the following with \textit{consistent file names}:
+
+\begin{itemize}
+	\item Your Arduino codes. Make sure it works before you upload.
+	\begin{itemize}
+		\item \textbf{Fully comment your code!} 
+		\item \textbf{Naming convention:} username\_projectX.ino\\
+		Example: cew52\_blinky2.ino, cew52\_stoplight.ino.
+		\item Put all Arduino codes for this assignment in a project folder. 
+	\end{itemize}
+
+	\item Relevant movies or photos.
+	\begin{itemize}
+		\item \textbf{Naming convention:} username\_LED\_bright.mov
+	\end{itemize}
+	\item Summary from Activity 1 and your concise project documentation from Activity 2.
+	\item Put all files inside of a directory named: username\_assignment3
+\end{itemize}
+
+%\vspace{2cm}
+
+
+
+\end{document}
