@@ -4,4 +4,4 @@ attendance.csv
 
 instructor/
 
-.DS_Store
+*.DS_Store
