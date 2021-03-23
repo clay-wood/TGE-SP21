@@ -1,0 +1,94 @@
+\documentclass[10pt]{article}
+
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amsthm,amssymb}
+\usepackage{graphicx}
+\usepackage{subfig}
+\usepackage{float}
+\usepackage{wrapfig}
+\usepackage{multicol}
+ \usepackage{booktabs}
+ \usepackage{hyperref}
+ \hypersetup{
+ 	colorlinks=true,
+ 	linkcolor=blue,
+ 	filecolor=magenta,      
+ 	urlcolor=cyan,
+ }
+
+\setlength\parindent{0pt}
+
+\graphicspath{ {/Users/clay/Documents/research/TGE-SP21/assignments/images/} }
+
+\newcommand{\titler}[2]{
+	\title{Assignment #1} %replace X with the appropriate number
+	\author{Geosc 597-003 \\
+		Techniques of Geophysical Experimentation} %if necessary, replace with your course title \\
+	\date{Due: #2}
+	
+	\maketitle}
+
+
+\begin{document}
+
+% --------------------------------------------------------------
+%                         Start here
+% --------------------------------------------------------------
+
+\titler{5}{29 March}
+
+\section*{Activity: Pylook Data Reduction}
+
+\begin{wraptable}{r}{5cm}
+	%	\begin{table}[h!t]
+	\footnotesize
+	\centering
+	\begin{tabular}{@{}ll@{}}
+		\multicolumn{2}{c}{\textbf{Grading Rubric}} \\ \midrule 
+		\multicolumn{1}{l}{\textit{Topic}}   & \textit{Points}   \\ \midrule 
+		jupyter notebook   & 70   \\ \midrule
+		brief report w/ plots   & 15   \\ \midrule
+		reduced data file & 5  \\ \midrule
+		README & 5  \\ \bottomrule
+	\end{tabular}
+	%	\end{table}
+\end{wraptable}
+
+Use pylook to reduce the raw data from an biax friction experiment. Then generate a brief report with plots, a processed data file, and a Readme file. 
+
+\begin{itemize}
+	\item Load in \textit{p5468S04Mug5l} -- the `l-file'.
+	\item Note: data['Time'] = np.cumsum(data['Time']/10000) -- b/c we down-sample from 10kHz recording rate. 
+	\item Convert from bit to physical units.
+	\begin{itemize}
+		\item The NI recorder is a 24-bit system
+		\item Calibrations are found on the experiment runsheet
+	\end{itemize}
+	\item Correct for any offsets (review notes of runsheet for reference).
+	\item Correct for zeros points in data. 
+	\item Calculate the coefficient of friction. Is this reasonable -- why/not? Cite source(s).
+	\item Include plots in the Jupyter Notebook.
+\end{itemize}
+
+\section*{What to upload to Canvas}
+You should upload the following with \textit{consistent file names}:
+
+\begin{itemize}
+	\item Jupyter Notebook
+	\begin{itemize}
+		\item \textbf{Fully comment your code!} 
+		\item \textbf{Naming convention:} p5468\_look\_username.ipynb
+		\item Put all Arduino codes for this assignment in a project folder. 
+	\end{itemize}
+	\item Brief report
+	\begin{itemize}
+		\item Brief description of experiment.
+		\item Relevant figures with proper labels and brief captions (one figure per page).
+	\end{itemize}
+	\item Reduced/processed data file in a standard format (e.g. *.csv, *.txt). 
+	\item README -- a file that describes files in directory. 
+	\item Zip directory and upload to Canvas. (p5468\_username.zip)
+\end{itemize}
+
+
+\end{document}
