@@ -1,0 +1,95 @@
+\documentclass[10pt]{article}
+
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amsthm,amssymb}
+\usepackage{graphicx}
+\usepackage{subfig}
+\usepackage{float}
+\usepackage{wrapfig}
+\usepackage{multicol}
+\usepackage{booktabs}
+\usepackage{hyperref}
+\usepackage{pythonhighlight}
+
+ \hypersetup{
+ 	colorlinks=true,
+ 	linkcolor=blue,
+ 	filecolor=magenta,      
+ 	urlcolor=cyan,
+ }
+
+\setlength\parindent{0pt}
+
+\graphicspath{ {/Users/clay/Documents/research/TGE-SP21/assignments/images/} }
+
+\newcommand{\titler}[2]{
+	\title{Assignment #1} %replace X with the appropriate number
+	\author{Geosc 597-003 \\
+		Techniques of Geophysical Experimentation} %if necessary, replace with your course title \\
+	\date{Due: #2}
+	
+	\maketitle}
+
+
+\begin{document}
+
+% --------------------------------------------------------------
+%                         Start here
+% --------------------------------------------------------------
+
+\titler{7}{23 April}
+
+\section*{Analog to Digital Conversion \& Quantization}
+
+Read section 1 of the document \textit{From analog to digital} -- subsections 1 - 4 should be informative. Use the python notebook\textit{ quantization\_animated.ipynb} to interactively explore signal quantization. These files are available under the \textit{resources} directory in the Git repository. \\ \\
+There are 4 cells in quantization\_animated.ipynb. \\
+\textbf{Cell [1]} imports all necessary libraries -- you may need to install some  via anaconda prompt or terminal. \\
+\textbf{Cell [2]} defines a function that creates a sinusoidal waveform by solving the wave equation.\\
+\textbf{Cell [3]} creates an interactive plot with analog and quantized signals. How does increasing the bit depth affect the quantized signal? \\
+\textbf{Cell [4]} \textcolor{red}{is broken -- you need to make it work.} Calculate the error between the signal and the quantized signal and the signal to noise ratio (SNR).
+\begin{python}
+# CALCULATE ERROR BETWEEN SAMPLED SIGNAL AND QUANTIZED SIGNAL
+error = 
+
+# CALCULATE SIGNAL TO NOISE RATIO (SNR)
+# FIRST: CALCULATE MEAN POWER OF INPUT SIGNAL -- Ps
+# SECOND: CALCULATE MEAN POWER OR VARIANCE OF QUANTIZATION RROR -- Pe
+# SNR = Ps/Pe
+
+Ps = 
+Pe = 
+SNR = 
+\end{python}
+
+
+\section*{Final Project -- Proposal}
+The project should help you solve a research problem you are facing while applying some of the skills covered in this course. We would like to help you define a project that is within the scope of the course and the semester time limit on the work. A good project will have several characteristics:
+
+\begin{itemize}
+	\item Uses multiple disciplines we discuss (i.e. mechanical, electrical, software, etc.)
+	\item Solves a problem with no commercial solution or no economical commercial solution. 
+	\item Will not cost thousands of dollars to build. Plan on \$50 or less.
+	\item Does not put you or others in the path of potential harm or danger.
+\end{itemize}
+
+Write a summary of one page or less that describes:
+\begin{itemize}
+	\item What your project is.
+	\item What it will do.
+	\item What resources you will need to complete it.
+	\item What parts you may need and a rough estimate of the cost.
+\end{itemize}
+
+\section*{What to upload to Canvas}
+You should upload the following with \textit{consistent file names}:
+
+\begin{itemize}
+	\item Working python notebook -- \textbf{50 pts}
+	\begin{itemize}
+		\item \textbf{Fully comment your code!} 
+	\end{itemize}
+	\item Final project proposal -- \textbf{50 pts}
+	\item Zip directory and upload to Canvas. (hw7\_username.zip)
+\end{itemize}
+
+\end{document}
