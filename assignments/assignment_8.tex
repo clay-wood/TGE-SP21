@@ -1,0 +1,111 @@
+\documentclass[10pt]{article}
+
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amsthm,amssymb}
+\usepackage{graphicx}
+\usepackage{subfig}
+\usepackage{float}
+\usepackage{wrapfig}
+\usepackage{multicol}
+\usepackage{booktabs}
+\usepackage{hyperref}
+\usepackage{pythonhighlight}
+
+ \hypersetup{
+ 	colorlinks=true,
+ 	linkcolor=blue,
+ 	filecolor=magenta,      
+ 	urlcolor=cyan,
+ }
+
+\setlength\parindent{0pt}
+
+\graphicspath{ {/Users/clay/Documents/research/TGE-SP21/assignments/images/} }
+
+\newcommand{\titler}[2]{
+	\title{Assignment #1} %replace X with the appropriate number
+	\author{Geosc 597-003 \\
+		Techniques of Geophysical Experimentation} %if necessary, replace with your course title \\
+	\date{Due: #2}
+	
+	\maketitle}
+
+
+\begin{document}
+
+% --------------------------------------------------------------
+%                         Start here
+% --------------------------------------------------------------
+
+\titler{8}{30 April}
+
+\section*{Determine Granite Compressive Strength}
+
+In this activity you will combine many of the topics covered in the course to determine the compressive strength of Westerly granite using the Biaxial deformation apparatus. Work with your classmates to plan and carry out the experiment. You will be given one Westerly granite core to determine the compressive strength.
+
+
+\subsection*{Planning:}
+Here are some questions and pointers to help you plan your experiment. 
+\begin{itemize}
+	\item Which load cell gain is appropriate? Consider the voltage range, and theoretical compressive strength of granite.
+	\item Which DCDT gain is best suited? Why?
+	\item What safety precautions should be considered?
+	\item Take measurements of the sample.
+\end{itemize}
+
+
+\subsection*{Experiment:}
+Here are some goals for the experiment.
+\begin{itemize}
+	\item Safety: use plexiglass as a barrier between you and the experimental apparatus. 
+	\item Load and unload the sample -- investigate hysteresis. Does loading rate have an effect?
+	\item Apply load until sample yields, fractures. 
+	\item Use a reasonable recording rate. 
+	\item Completely fill out the runsheet (including Notes, Purpose/Description/, Hydraulics temps/press).
+\end{itemize}
+
+
+\subsection*{Analysis:}
+\begin{itemize}
+	\item Scan your runsheet and save as a pdf.
+	\item Use pylook to reduce the data (convert from bit to physical units, set zero points, remove offsets) This needs to be commented. 
+	\item Include scripts (if not also included in your pylook code) for producing figures.
+\end{itemize}
+
+
+\subsection*{Results/Discussion:}
+Use concise language to address the following points. One page should be more than enough for text and place figures on separate pages. 
+\begin{itemize}
+	\item Briefly describe the point of this experiment and the experimental methodology.
+	\item How force and displacement are measured?
+	\item What is \textit{compressive strength}, what is the experimental value, and how did you arrive at this? Is this a reasonable value? Cite source(s)
+	\item What is Young's Modulus, what is the experimental value, and how did you calculate it? Is this a reasonable value? Cite source(s)
+	\item Produce figures of the following: 
+	\begin{itemize}
+		\item Full experiment (Stress vs. Time)
+		\item Load/Unload
+		\item Side-by-side comparison of loading rates
+		\item Full experiment (Stress vs. Strain). Label relevant events on plot. Include slope for determining Young's Modulus.
+	\end{itemize}
+\end{itemize}
+
+
+\section*{What to upload to Canvas}
+You should upload the following with \textit{consistent file names}:
+
+\begin{itemize}
+	\item Filled out runsheet -- \textbf{15 pts}
+	\item Working pylook and any other code -- \textbf{30 pts}
+	\begin{itemize}
+		\item \textbf{Fully comment your code(s)!} 
+	\end{itemize}
+	\item README -- \textbf{5 pts}
+	\item Results/Discussion report 
+	\begin{itemize}
+		\item Concise \& accurate discussion -- \textbf{25 pts}
+		\item Figures with labels and captions -- \textbf{25 pts}
+	\end{itemize}
+	\item \textbf{\textit{Zip directory and upload to Canvas. (hw8\_username.zip)}}
+\end{itemize}
+
+\end{document}
