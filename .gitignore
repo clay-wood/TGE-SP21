@@ -5,3 +5,4 @@ attendance.csv
 instructor/
 
 *.DS_Store
+resources/.ipynb_checkpoints/
